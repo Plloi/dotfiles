@@ -1,0 +1,12 @@
+#User Data Directories
+Applications
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+
+#Protect self from stupid
+.ssh
