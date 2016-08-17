@@ -2,11 +2,6 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 unamestr=`uname`
 
-
-if [[ $unamest == 'Darwin' ]]; then
-	#Load mac sepcific scripts
-fi
-
 echo "Loading Common Libraries..."; 
 for file in `find ~/lib -name "*.sh" -maxdepth 1 2> /dev/null`; do 
 	. $file;
