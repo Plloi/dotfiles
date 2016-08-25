@@ -1,0 +1,3 @@
+#!/bin/bash
+cols=$((($(tput cols)/5*2) & ~1))
+while true; do head -c$(($cols*50)) /dev/urandom|od -An -x -w$cols | grep --color -E "(dead)|(beef)"; sleep .$[$RANDOM % 10]; done
