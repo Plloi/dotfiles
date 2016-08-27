@@ -1,5 +1,8 @@
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
+
+export PATH="$HOME/bin:$PATH"
+
 unamestr=`uname`
 
 echo "Loading Common Libraries..."; 
