@@ -23,6 +23,7 @@ Repos
 #Command/Repl Histories
 .bash_history
 .node_repl_history
+.zhistory
 
 #NPM Restores
 .hyperterm_plugins/node_modules
