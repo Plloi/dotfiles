@@ -14,14 +14,16 @@ export PATH="$HOME/bin:$PATH"
 
 unamestr=`uname`
 
-echo "Loading Common Libraries..."; 
-for file in `find ~/lib -name "*.sh" -maxdepth 1 2> /dev/null`; do 
+echo "Loading Common Libraries...";
+for file in `find ~/lib -name "*.sh" -maxdepth 1 2> /dev/null`; do
+	echo $file
 	. $file;
 done;
 echo "Done!"
 
 echo "Loading $unamestr Libraries";
-for file in `find ~/lib/$unamestr -name "*.sh" -maxdepth 1 2> /dev/null`; do 
+for file in `find ~/lib/$unamestr -name "*.sh" -maxdepth 1 2> /dev/null`; do
+	echo $file
 	. $file;
 done;
 echo "Done!"
