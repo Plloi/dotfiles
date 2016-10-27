@@ -24,6 +24,7 @@ Repos
 .bash_history
 .node_repl_history
 .zhistory
+.histfile
 
 #NPM Restores
 .hyperterm_plugins/node_modules
