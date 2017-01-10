@@ -13,6 +13,7 @@ Repos
 
 #Game Data/Saves
 .wesnoth1.12
+.dosbox/c
 
 #Protect self from stupid
 .env
