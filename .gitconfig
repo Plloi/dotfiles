@@ -5,3 +5,5 @@
 	default = matching
 [alias]
 	dotcom = !git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
+[core]
+	trustctime = false
