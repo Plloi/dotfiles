@@ -1,0 +1,14 @@
+directory
+environment
+git
+history
+input
+utility
+meta
+custom
+syntax-highlighting
+history-substring-search
+prompt
+minimal2 https://github.com/PatTheMav/minimal2
+insult
+completion
