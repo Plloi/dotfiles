@@ -2,14 +2,27 @@
 # User configuration sourced by interactive shells
 #
 
+# Add my local binaries/scripts to the path
+export PATH="$HOME/bin:$PATH"
+
 # Source zim
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
-[[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
+if [[ -s ${ZIM_HOME}/init.zsh ]]; then
+  source ${ZIM_HOME}/init.zsh
+else
+  echo "No Zim Fixing this crap..."
+  if (git clone --recursive https://github.com/zimfw/zimfw ~/.zim); then                                                                                                                              ~
+    echo "Zim installed";
+    source ${ZDOTDIR:-${HOME}}/.zlogin
+    echo "Attempting to install 3rd party modules..."a
+    zmodules-fetch.zsh
+    source ~/.zshrc
+    return 0
+  else
+    echo "GIR! What have you done?\!?"
+  fi
 
-# fiexport ZPLUG_HOME=/usr/local/opt/zplug
-# source $ZPLUG_HOME/init.zsh
-
-export PATH="$HOME/bin:$PATH"
+fi
 
 unamestr=`uname`
 

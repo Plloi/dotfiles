@@ -13,7 +13,7 @@ for zmodule in $zimmodules; do
   if [[ ! -d ${ZIM_HOME}/modules/${zmodule[1]} ]]; then
     print "${zmodule[1]} Not found, attempting look and install..."
     if (( ${+zmodule[2]} )); then
-      git clone ${zmodule[2]} ${zmodule[1]}
+      git clone --recursive ${zmodule[2]} ${zmodule[1]}
     else
       print "${zmodule[1]} has no repository defined."
     fi

@@ -4,11 +4,10 @@ git
 history
 input
 utility
-meta
 custom
 syntax-highlighting
 history-substring-search
 prompt
 minimal2 https://github.com/PatTheMav/minimal2
-insult
+insult https://github.com/Plloi/zim-insult.git
 completion
