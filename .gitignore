@@ -30,6 +30,9 @@ Repos
 #NPM Restores
 .hyperterm_plugins/node_modules
 
+#Zim
+.zim
+
 #Caches/Tmp/Misc files
 .cache
 .gem
@@ -37,3 +40,5 @@ Repos
 .npm
 .DS_Store
 .CFUserTextEncoding
+.zcompdump
+.serverauth.*
