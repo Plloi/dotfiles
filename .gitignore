@@ -33,6 +33,9 @@ Repos
 #Zim
 .zim
 
+#logs
+.maid/maid.log
+
 #Caches/Tmp/Misc files
 .cache
 .gem
@@ -41,4 +44,9 @@ Repos
 .DS_Store
 .CFUserTextEncoding
 .zcompdump
+.tmp
+
+#X Nonsense
+.Xauthority
 .serverauth.*
+.xsession-errors
