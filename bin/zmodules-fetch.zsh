@@ -18,6 +18,7 @@ for zmodule in $zimmodules; do
       print "${zmodule[1]} has no repository defined."
     fi
   else
+    #TODO Update Module
     print "${zmodule[1]} Exists, skpping..."
   fi
 done
