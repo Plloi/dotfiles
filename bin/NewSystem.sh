@@ -44,6 +44,6 @@ fi
 
 # TODO: Run setup scripts
 echo "Running Setup Scripts...";
-for file in `find lib/Setup -maxdepth 1 -name "*.sh"`; do
+for file in $(find lib/Setup -maxdepth 1 -name "*.sh"); do
 	$file;
 done;
