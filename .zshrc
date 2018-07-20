@@ -2,10 +2,18 @@
 # User configuration sourced by interactive shells
 #
 
-# Add my local binaries/scripts to the path
+if [ -e ~/.debug ]; then
+  alias dp=echo
+else
+  alias dp=true
+fi
+dp Debug Printing is Active and working!
+
+
+dp Add my local binaries/scripts to the path
 export PATH="$HOME/bin:$PATH"
 
-# Source zim
+dp Source zim
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 if [[ -s ${ZIM_HOME}/init.zsh ]]; then
   source ${ZIM_HOME}/init.zsh
@@ -24,18 +32,21 @@ else
 
 fi
 
+
+function LibLoad () {
+  dp "Loading $1 Libraries...";
+  for file in `find $2 -name "*.zsh" -maxdepth 1 2> /dev/null`; do
+    dp $file
+    . $file;
+  done;
+  dp "Done!"
+}
+
 unamestr=`uname`
+LibLoad Common ~/lib
+LibLoad $unamestr ~/lib/$unamestr
 
-echo "Loading Common Libraries...";
-for file in `find ~/lib -name "*.sh" -maxdepth 1 2> /dev/null`; do
-	echo $file
-	. $file;
-done;
-echo "Done!"
+dp Cleanup.
 
-echo "Loading $unamestr Libraries";
-for file in `find ~/lib/$unamestr -name "*.sh" -maxdepth 1 2> /dev/null`; do
-	echo $file
-	. $file;
-done;
-echo "Done!"
+unfunction LibLoad
+unalias dp
