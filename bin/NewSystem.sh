@@ -42,7 +42,7 @@ else
 	fi
 fi
 
-# TODO: Run setup scripts
+# TODO: Define more setup scripts
 echo "Running Setup Scripts...";
 for file in $(find lib/Setup -maxdepth 1 -name "*.sh"); do
 	$file;
