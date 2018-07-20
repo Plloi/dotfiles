@@ -18,8 +18,12 @@ for zmodule in $zimmodules; do
       print "${zmodule[1]} has no repository defined."
     fi
   else
-    #TODO Update Module
     print "${zmodule[1]} Exists, skpping..."
+    pushd ${ZIM_HOME}/modules/${zmodule[1]}
+    # print "Updating ${zmodule[1]} ..."
+    # TODO Update Module
+
+    popd
   fi
 done
 popd
