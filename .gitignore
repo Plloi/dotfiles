@@ -51,3 +51,6 @@ Repos
 .Xauthority
 .serverauth.*
 .xsession-errors
+
+#Golang
+.go
