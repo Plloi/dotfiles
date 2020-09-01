@@ -2,20 +2,26 @@
 # User configuration sourced by interactive shells
 #
 
+set echo off
 if [ -e ~/.debug ]; then
-  alias dp=echo
-else
-  alias dp=true
+  set echo on
 fi
-dp Debug Printing is Active and working!
+
+echo Debug Printing is Active and working!
 
 
-dp Add my local binaries/scripts to the path
+echo Add my local binaries/scripts to the path
 export PATH="$HOME/bin:$PATH"
 
-dp Source zim
-export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
-if [[ -s ${ZIM_HOME}/init.zsh ]]; then
+if [[ -d "$HOME/go/bin" ]]; then
+  export PATH="$HOME/go/bin:$PATH"
+fi
+
+if [[ -s ${ZIM_HOME}/zimfw.zsh ]]; then
+  if [[ ${ZIM_HOME}/init.zsh -ot ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
+    # Update static initialization script if it's outdated, before sourcing it
+    source ${ZIM_HOME}/zimfw.zsh init -q
+  fi
   source ${ZIM_HOME}/init.zsh
 else
   echo "No Zim Fixing this crap..."
@@ -34,19 +40,18 @@ fi
 
 
 function LibLoad () {
-  dp "Loading $1 Libraries...";
+  echo "Loading $1 Libraries...";
   for file in `find $2 -name "*.zsh" -maxdepth 1 2> /dev/null`; do
-    dp $file
+    echo $file
     . $file;
   done;
-  dp "Done!"
+  echo "Done!"
 }
 
 unamestr=`uname`
 LibLoad Common ~/lib
 LibLoad $unamestr ~/lib/$unamestr
 
-dp Cleanup.
+echo Cleanup.
 
 unfunction LibLoad
-unalias dp

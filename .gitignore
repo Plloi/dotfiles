@@ -11,6 +11,8 @@ Pictures
 Public
 Videos
 Repos
+.electrum
+.vscode
 
 #Game Data/Saves
 .wesnoth1.12
@@ -45,7 +47,10 @@ Repos
 .DS_Store
 .CFUserTextEncoding
 .zcompdump
+.zcompcache
 .tmp
+*.zwc
+*.zwc.old
 
 #X Nonsense
 .Xauthority
@@ -53,4 +58,9 @@ Repos
 .xsession-errors
 
 #Golang
-.go
+go
+
+#~/.config
+.config
+
+.local

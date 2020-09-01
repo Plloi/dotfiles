@@ -1,9 +1,3 @@
 [user]
-	email = plloi.pllex@gmail.com
+	email = plloi.pllex@gmaill.com
 	name = Shaun Hammill
-[push]
-	default = matching
-[alias]
-	dotcom = !git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
-[core]
-	trustctime = false
