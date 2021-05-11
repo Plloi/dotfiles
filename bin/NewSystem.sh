@@ -1,15 +1,16 @@
 #!/bin/sh
 check_commands() {
-	local fail=0
-	declare -a commands_needed=(
-		"git"
-	)
-	for com in "${commands_needed[@]}"; do
-		if [ ! $(command -v $com) ]; then
-			echo "$com not found"
+	fail=0
+	NEEDED=""
+	NEEDED="${NEEDED} git"
+
+	for NEEDS in "${NEEDED}"; do
+		if [ ! $(command -v $NEEDS) ]; then
+			echo "$NEEDS not found"
 			fail=1
 		fi
 	done
+	unset NEEDED
 	if [ $fail -eq 1 ]; then
 		# TODO: Ask/Attempt to fix mising software.
 		exit 1
@@ -32,7 +33,7 @@ else
 	if ! git pull origin master
 	then
 		while true; do
-		    read -n 1 -p "Fail to populate home dir from repo force? " yn
+		    read -r -n 1 -p "Fail to populate home dir from repo force? " yn
 		    case $yn in
 		        [Yy]* ) git reset --hard origin/master; break;;
 		        [Nn]* ) exit;;
