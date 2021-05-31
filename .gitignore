@@ -30,6 +30,7 @@ Repos
 .node_repl_history
 .zhistory
 .histfile
+.mysql_history
 
 #NPM Restores
 .hyperterm_plugins/node_modules
@@ -52,6 +53,8 @@ Repos
 .tmp
 *.zwc
 *.zwc.old
+*.swp
+hound/
 
 #X Nonsense
 .Xauthority
@@ -60,8 +63,15 @@ Repos
 
 #Golang
 go
+.gore/
 
-#~/.config
+#Configs
 .config
-
 .local
+.secret
+
+#DevOops
+.aws
+.azure
+.ansible
+.docker
