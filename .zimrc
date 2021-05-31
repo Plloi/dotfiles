@@ -17,7 +17,7 @@ zmodule Plloi/zim-insult
 zmodule completion
 zmodule history-substring-search
 zmodule zsh-users/zsh-completions
-
+zmodule ssh
 
 # Modules setup configuration.
 # See ...
