@@ -75,3 +75,9 @@ go
 .azure
 .ansible
 .docker
+
+#misc/sort
+tmp/
+.nuget/
+.pdk/
+.puppet/
