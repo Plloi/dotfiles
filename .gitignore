@@ -111,6 +111,7 @@ tmp/
 #Prusa Slicer
 .var/app/com.prusa3d.PrusaSlicer/cache/
 .var/app/com.prusa3d.PrusaSlicer/config/PrusaSlicer/cache/
+.var/app/com.prusa3d.PrusaSlicer/config/PrusaSlicer/snapshots/
 
 #Podman Desktop
 .var/app/io.podman_desktop.PodmanDesktop/
