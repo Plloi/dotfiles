@@ -4,6 +4,7 @@ Applications
 Desktop
 Documents
 Downloads
+Games
 Library
 Movies
 Music
@@ -14,16 +15,20 @@ Repos
 .electrum
 .vscode
 .vscode-server
+.mozilla
 
 #Game Data/Saves
 .wesnoth1.12
 .dosbox/c
+.steam
+.ultrastardx
 
 #Protect self from stupid
 .env
 .gnupg
 .password-store
 .ssh
+.pki
 
 #Command/Repl Histories
 .bash_history
@@ -55,6 +60,7 @@ Repos
 *.zwc.old
 *.swp
 hound/
+.icons
 
 #X Nonsense
 .Xauthority
@@ -81,3 +87,5 @@ tmp/
 .nuget/
 .pdk/
 .puppet/
+
+
