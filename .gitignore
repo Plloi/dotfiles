@@ -16,6 +16,7 @@ Repos
 .vscode
 .vscode-server
 .mozilla
+.emerald
 
 #Game Data/Saves
 .wesnoth1.12
