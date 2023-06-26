@@ -22,7 +22,8 @@ Repos
 .wesnoth1.12
 .dosbox/c
 .steam
-.
+.ultrastardx
+.wine/drive_c/
 
 # Runescape
 .runelite/
@@ -107,3 +108,6 @@ tmp/
 #Prusa Slicer
 .var/app/com.prusa3d.PrusaSlicer/cache/
 .var/app/com.prusa3d.PrusaSlicer/config/PrusaSlicer/cache/
+
+#Podman Desktop
+.var/app/io.podman_desktop.PodmanDesktop/
