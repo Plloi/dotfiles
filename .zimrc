@@ -14,13 +14,7 @@ zmodule Plloi/zim-insult
 zmodule completion
 zmodule zsh-users/zsh-completions
 zmodule ssh
-
-
 zmodule zsh-users/zsh-history-substring-search
-zmodload -F zsh/terminfo +p:terminfo
-bindkey "${terminfo[kcuu1]}" history-substring-search-up
-bindkey "${terminfo[kcud1]}" history-substring-search-down
-
 
 # Modules setup configuration.
 # See ...
@@ -107,15 +101,3 @@ zstyle ':zim:module' insult 'url' 'Plloi/zim-insult'
 # See https://github.com/zsh-users/zsh-autosuggestions/blob/master/README.md#suggestion-highlight-style
 #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
 
-#
-# zsh-syntax-highlighting
-#
-
-# Set what highlighters will be used.
-# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters.md
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
-
-# Customize the main highlighter styles.
-# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md#how-to-tweak-it
-#typeset -A ZSH_HIGHLIGHT_STYLES
-#ZSH_HIGHLIGHT_STYLES[comment]='fg=10'
