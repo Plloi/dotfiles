@@ -34,4 +34,37 @@ Maid.rules do
       end
     end
   end
+
+  rule 'Move video files out of Downloads' do
+    dir('~/Downloads/*.{mkv,mp4,mov}').each do |file|
+      if 2.day.since?(accessed_at(file))
+        move(file, '~/Videos')
+      end
+    end
+  end
+
+  rule 'Move image files out of Downloads' do
+    dir('~/Downloads/*.{jpg,jpeg,png,webp}').each do |file|
+      if 2.day.since?(accessed_at(file))
+        move(file, '~/Pictures')
+      end
+    end
+  end
+
+  rule 'Move package files to subdir in Downloads' do
+    dir('~/Downloads/*.{deb}').each do |file|
+      if 2.day.since?(accessed_at(file))
+        move(file, '~/Downloads/Packages')
+      end
+    end
+  end
+
+  rule 'Move document files to out of Downloads' do
+    dir('~/Downloads/*.{pdf,txt}').each do |file|
+      if 2.day.since?(accessed_at(file))
+        move(file, '~/Documents')
+      end
+    end
+  end
+
 end
