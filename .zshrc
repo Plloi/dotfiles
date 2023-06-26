@@ -11,7 +11,7 @@ echo Debug Printing is Active and working!
 
 zstyle ':zim:ssh' ids 'id_rsa'
 echo Add my local binaries/scripts to the path
-export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 
 if [[ -d "$HOME/go/bin" ]]; then
   export PATH="$HOME/go/bin:$PATH"
@@ -22,7 +22,7 @@ if [[ -s ${ZIM_HOME}/zimfw.zsh ]]; then
     # Update static initialization script if it's outdated, before sourcing it
     source ${ZIM_HOME}/zimfw.zsh init -q
   fi
-  source ${ZIM_HOME}/init.zsh 
+  source ${ZIM_HOME}/init.zsh
 else
   echo "No Zim Fixing this crap..."
   # Download zimfw script
@@ -64,3 +64,7 @@ LibLoad $unamestr ~/lib/$unamestr
 echo Cleanup.
 
 unfunction LibLoad
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
