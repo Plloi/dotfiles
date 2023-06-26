@@ -79,6 +79,7 @@ go
 .gore/
 
 #Rust
+.rustup
 .cargo
 
 #Configs
