@@ -33,6 +33,7 @@ Repos
 
 #Command/Repl Histories
 .bash_history
+.cockroachsql_history
 .node_repl_history
 .zhistory
 .histfile
