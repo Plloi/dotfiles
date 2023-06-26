@@ -22,7 +22,11 @@ Repos
 .wesnoth1.12
 .dosbox/c
 .steam
-.ultrastardx
+.
+
+# Runescape
+.runelite/
+.runescape
 
 #Protect self from stupid
 .env
