@@ -29,6 +29,7 @@ Repos
 # Runescape
 .runelite/
 .runescape
+Jagex
 
 #Protect self from stupid
 .env
