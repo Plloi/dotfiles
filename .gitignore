@@ -94,3 +94,6 @@ tmp/
 .puppet/
 .dotnet/
 
+# Kodi
+# TODO: Preserve some things maybe
+.kodi
