@@ -5,19 +5,22 @@
 # Set input mode to 'emacs' (default) or 'vi'.
 #zstyle ':zim:input' mode 'vi'
 
-zmodule directory
 zmodule environment
 zmodule git
 zmodule git-info
-zmodule history
-# zmodule input
 zmodule utility
 zmodule PatTheMav/minimal2
 zmodule Plloi/zim-insult
 zmodule completion
-zmodule history-substring-search
 zmodule zsh-users/zsh-completions
 zmodule ssh
+
+
+zmodule zsh-users/zsh-history-substring-search
+zmodload -F zsh/terminfo +p:terminfo
+bindkey "${terminfo[kcuu1]}" history-substring-search-up
+bindkey "${terminfo[kcud1]}" history-substring-search-down
+
 
 # Modules setup configuration.
 # See ...
