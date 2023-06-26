@@ -72,6 +72,9 @@ hound/
 go
 .gore/
 
+#Rust
+.cargo
+
 #Configs
 .config
 .local
