@@ -103,3 +103,7 @@ tmp/
 # Kodi
 # TODO: Preserve some things maybe
 .kodi
+
+#Prusa Slicer
+.var/app/com.prusa3d.PrusaSlicer/cache/
+.var/app/com.prusa3d.PrusaSlicer/config/PrusaSlicer/cache/
