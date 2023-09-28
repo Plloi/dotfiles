@@ -43,6 +43,7 @@ Jagex
 #Command/Repl Histories
 .bash_history
 .cockroachsql_history
+.lesshst
 .node_repl_history
 .zhistory
 .histfile
