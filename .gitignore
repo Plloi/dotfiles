@@ -26,7 +26,7 @@ Repos
 .glob2
 .steam
 .ultrastardx
-.wine/drive_c/
+.wine/
 
 # Runescape
 .runelite/
@@ -74,6 +74,9 @@ Jagex
 hound/
 .icons
 .qmmp/cache
+.spiderfoot
+.thunderbird
+.var
 
 #X Nonsense
 .Xauthority
@@ -98,6 +101,8 @@ go
 .azure
 .ansible
 .docker
+docker
+.surrealdb
 
 #misc/sort
 tmp/
@@ -105,6 +110,9 @@ tmp/
 .pdk/
 .puppet/
 .dotnet/
+.net
+.platformio
+.nvm
 
 # Kodi
 # TODO: Preserve some things maybe
