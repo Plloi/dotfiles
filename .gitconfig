@@ -1,3 +1,5 @@
 [user]
-	email = plloi.pllex@gmail.com
+	email = shammill@traumasoft.com
 	name = Shaun Hammill
+[alias]
+	yolo = !git commit -m \"$(curl -s https://whatthecommit.com/index.txt)\"
