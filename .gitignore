@@ -43,6 +43,7 @@ Jagex
 #Command/Repl Histories
 .bash_history
 .cockroachsql_history
+.irb_history
 .lesshst
 .node_repl_history
 .zhistory
@@ -77,6 +78,8 @@ hound/
 .spiderfoot
 .thunderbird
 .var
+.dbus
+.ServiceHub
 
 #X Nonsense
 .Xauthority
