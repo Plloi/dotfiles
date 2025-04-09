@@ -16,6 +16,9 @@ export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$P
 if [[ -d "$HOME/go/bin" ]]; then
   export PATH="$HOME/go/bin:$PATH"
 fi
+if [[ -d "$HOME/.dotnet/tools/" ]]; then
+  export PATH="$HOME/.dotnet/tools/:$PATH"
+fi
 
 if [[ -s ${ZIM_HOME}/zimfw.zsh ]]; then
   if [[ ${ZIM_HOME}/init.zsh -ot ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
